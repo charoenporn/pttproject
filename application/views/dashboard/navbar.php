@@ -52,12 +52,14 @@
                     Account
                   </p>
                 </a>
+<?php if($_SESSION['autority'] == '1'){ ?>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownProfile">
                   <a class="dropdown-item" href="#">Profile</a>
                   <a class="dropdown-item" href="#">Settings</a>
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="#">Log out</a>
                 </div>
+<?php } ?>
               </li>
             </ul>
           </div>
